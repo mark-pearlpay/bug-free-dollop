@@ -11,6 +11,11 @@ class Car(object):
 	def readEngineModel(self, details):
 		return details['model']
 
+# The test exposes the brittleness of the Car
 def test_car_engine():
+	# I want to test with a fake engine
+	# but I can't since the EngineFactory
+	# only knows how to make real engines.
+	
 	# TODO test car with fake engine
 	# assert car.engine.name == 'fake'
